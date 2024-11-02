@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Transition for buttons and icons */
+.icon-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .icon-btn:hover {
+    transform: scale(1.1);
+    background-color: #b71c1c; /* Slightly darker red on hover */
+  }
+  
+  /* Transition for the card components */
+  .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  /* Custom styles for the form */
+  .form-control {
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+  }
+  
+  .btn-danger {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+  }
+
+  /* Email CSS  */
+
+
+  .main-email-div{
+    /* background-color:linear-gradient(90deg, red, yellow, green); */
+    background-color:rgb(34, 33, 40);
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -100px;
+    /* animation: bg 5s linear infinite; */
+    
+  }
+  @keyframes bg{
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  .main-email-div::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(170, 204, 255), rgb(0, 42, 255));
+    /* z-index: -1; */
+    clip-path: circle(20% at 30% 20%);
+
+   }
+   .main-email-div::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
+    /* z-index: -1; */
+    background: linear-gradient(to right, #ff07f3, #4c00ff); /* Linear gradient from left to right */
+    clip-path: circle(30% at 80% 50%);
+    /* z-index: -1; */
+
+   }
+   .email-div label{
+    color: white;
+   }
+  .email-div{
+    background:transparent;
+    border: 1px solid grey;
+    width: 400px;
+    padding: 20px;
+    /* height: 300px; */
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 15px black;
+    border-radius: 7px;
+  }
+  .em-ip{
+    width: 100%;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background:transparent;
+   color: white;
+    
+  }
+  .txt-ip{
+    height: 100px;
+    /* background-color: red; */
+  }
+  .em-ip:focus{
+    outline: none;
+    border: 1px solid crimson;
+  }
+  .em-btn{
+    width: 100%;
+    background-color: crimson;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  .em-btn:hover{
+    background-color: rgb(218, 41, 76);
+    color: white;
+  }
+  .em-btn:focus{
+    background-color: rgb(218, 41, 76);
+    color: white;
+  }

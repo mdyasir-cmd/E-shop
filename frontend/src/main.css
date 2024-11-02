@@ -1,0 +1,14 @@
+.count-cart{
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    top: -16px;
+    background-color: white;
+    border-radius: 50%;
+    padding:4px 7px;
+    left: 14px;
+}
+.cart-icon{
+    position: relative;
+
+}
